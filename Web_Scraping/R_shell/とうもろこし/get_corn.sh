@@ -1,0 +1,9 @@
+#!/bin/bash
+st_day=${1}
+st_month=${2}
+st_year=${3}
+en_day=${4}
+en_month=${5}
+en_year=${6}
+
+curl 'https://www.investing.com/instruments/HistoricalDataAjax' -H 'Cookie: adBlockerNewUserDomains=1548234099; optimizelyEndUserId=oeu1548234100257r0.7839419486555279; _ga=GA1.2.40562114.1548234101; _gid=GA1.2.1863629645.1548234101; __gads=ID=3ee4f4463f8fd41a:T=1548234101:S=ALNI_MYLQcTT-duEsZ9eKwTt4njo2WDpCw; _fbp=fb.1.1548234102027.158316284; __qca=P0-1355124194-1548234102162; PHPSESSID=46s3hort8j8vljnkfdi79i9vo6; SideBlockUser=a%3A2%3A%7Bs%3A10%3A%22stack_size%22%3Ba%3A1%3A%7Bs%3A11%3A%22last_quotes%22%3Bi%3A8%3B%7Ds%3A6%3A%22stacks%22%3Ba%3A1%3A%7Bs%3A11%3A%22last_quotes%22%3Ba%3A1%3A%7Bi%3A0%3Ba%3A3%3A%7Bs%3A7%3A%22pair_ID%22%3Bs%3A4%3A%228918%22%3Bs%3A10%3A%22pair_title%22%3Bs%3A0%3A%22%22%3Bs%3A9%3A%22pair_link%22%3Bs%3A20%3A%22%2Fcommodities%2Fus-corn%22%3B%7D%7D%7D%7D; geoC=JP; gtmFired=OK; StickySession=id.36669291226.792.www.investing.com; editionPostpone=1548234401451; r_p_s_n=1; G_ENABLED_IDPS=google; billboardCounter_1=0; nyxDorf=Y2QyY2I0YiBkM2pjbjxjfzNjNWdjejY1YmZgZw%3D%3D' -H 'Origin: https://www.investing.com' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: ja,en-US;q=0.9,en;q=0.8' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Accept: text/plain, */*; q=0.01' -H 'Referer: https://www.investing.com/commodities/us-corn-historical-data' -H 'X-Requested-With: XMLHttpRequest' -H 'Connection: keep-alive' --data "curr_id=8918&smlID=300196&header=US+Corn+Futures+Historical+Data&st_date=${st_month}%2F${st_day}%2F${st_year}&end_date=${en_month}%2F${en_day}%2F${en_year}&interval_sec=Daily&sort_col=date&sort_ord=DESC&action=historical_data" --compressed
