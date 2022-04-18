@@ -26,8 +26,6 @@ from pmlb import fetch_data
 from sklearn import datasets
 
 
-
-
 parser = argparse.ArgumentParser()
 parser.add_argument("use_dir", nargs="?", default=None)
 parser.add_argument("--test", action="store_true")  # デフォルトFalse, --testでTrue
