@@ -1,0 +1,4 @@
+use_data,row_num,col_num,data_kind,raw_r2/accuracy_Logistic/Linear,raw_r2/accuracy_GradientBoosting
+molecular_biology_promoters,85,58,B,0.7835497835497837,0.8311688311688312
+car,1383,7,M,0.6863399514115776,0.9780061992125324
+542_pollution,48,16,R,0.09795150408191788,0.43963265504737875
