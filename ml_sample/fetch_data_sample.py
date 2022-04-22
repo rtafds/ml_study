@@ -54,7 +54,7 @@ train_path = use_path + train_dir
 test_path = use_path + test_dir
 
 # pmlbの全データリスト
-pmlb_table = pd.read_table(this_file_dir + "/pmlb_datasets.tsv")
+pmlb_table = pd.read_table(this_file_dir + "/pmlb_datasets_now.tsv")
 if test:
     use_data = pmlb_table.iloc[[1,136],:]
     
